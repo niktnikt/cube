@@ -1,0 +1,95 @@
+/*hide up and down arrows (spinners)*/
+input[type=number]::-webkit-inner-spin-button, 
+input[type=number]::-webkit-outer-spin-button { 
+	-webkit-appearance: none; 
+	margin: 0; 
+}
+
+body{
+	background-color: #00bbff;
+}
+
+#displayTime{
+	color: black;
+	text-align: center;
+	font-size: 90px;
+	font-family: 'Skranji', cursive;
+	margin-top: 40px;
+}
+
+#displayScramble{
+	font-family: 'Yanone Kaffeesatz', sans-serif;
+	text-align: center;
+	font-size: 50px;
+}
+
+#startStopButton{
+	border-radius: 20%;
+	font-size: 50px;
+	background-color: #00bbff;
+	border: 3px solid #4d4d4f;
+	color: #ffffff;
+	font-family: 'Gloria Hallelujah', cursive;
+}
+#startStopButton:hover{
+	background-color: #0086b7;
+	cursor: pointer;
+}
+
+#startButtonDiv{
+	text-align: center;
+	margin-bottom: 0;
+}
+#best{
+	position: relative;
+	bottom: 390px;
+	margin-left: 30px;
+	font-family: 'Arvo', serif;
+	font-size: 20px;
+}
+#worst{
+	position: relative;
+	bottom: 300px;
+	margin-left: 30px;
+	font-family: 'Arvo', serif;
+	font-size: 20px;
+	margin-bottom: -300px;
+}
+#Ao5{
+	position: relative;
+	bottom: 45px;
+	margin-left: 300px;
+	font-family: 'Arvo', serif;
+	font-size: 20px;
+}
+#Ao12{
+	position: relative;
+	bottom: 225px;
+	margin-left: 300px;
+	font-family: 'Arvo', serif;
+	font-size: 20px;
+}
+#clearTimes{
+	margin-left: 5px;
+	padding: 5px;
+	font-family: 'Gloria Hallelujah', cursive;
+	border-radius: 20%;
+	background-color: #00bbff;
+	border: 2px dashed #4d4d4f;
+	color: #ffffff;
+}
+#clearTimes:hover{
+	cursor: pointer;
+}
+.solve{
+	font-family: 'Arvo', serif;
+	font-size: 30px;
+}
+#solvesDiv{
+	margin-left: 900px;
+	margin-top: -300px;
+}
+li:hover{
+	text-decoration: line-through;
+	cursor: pointer;
+}

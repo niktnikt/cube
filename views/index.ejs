@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title></title>
+	<link rel="stylesheet" type="text/css" href="/style.css">
+	<!-- fonts -->
+	<link href="https://fonts.googleapis.com/css?family=Yanone+Kaffeesatz" rel="stylesheet">
+	<link href="https://fonts.googleapis.com/css?family=Skranji" rel="stylesheet">
+	<link href="https://fonts.googleapis.com/css?family=Gloria+Hallelujah" rel="stylesheet">
+	<link href="https://fonts.googleapis.com/css?family=Arvo" rel="stylesheet">
+	<!-- Jquery for ajax -->
+	<script
+	src="https://code.jquery.com/jquery-3.3.1.js"
+	integrity="sha256-2Kok7MbOyxpgUVvAk/HJ2jigOSYS2auK4Pfzbm7uH60="
+	crossorigin="anonymous"></script>
+</head>
+<body>
+	<p id="displayScramble"></p>
+	<div id="startButtonDiv">
+		<button id="startStopButton" onclick="timer.startStopTimer()">Start</button>
+	</div>
+	<p id="displayTime">0:0</p>
+	<br>
+	<p id="best">Best: <%= bestSolve %></p>
+	<p id="worst">Worst: <%= worstSolve %> </p>
+	<p id="Ao5">Ao5: <%= AverageOf5 %></p>
+	<p id="Ao12">Ao12: <%= AverageOf12 %></p>
+	<div id='solvesDiv'>
+		<ol id="solves">
+			<% for(var i = 0; i < times.length; i++){ %>
+			<li id="<%= i %>" class='solve'><%= times[i].time %></li>
+			<% } %>
+		</ol>
+		<button id="clearTimes" onclick="timer.clearTimes()">Clear Times</button>
+	</div>
+	<script type="text/javascript" src="script.js"></script>
+</body>
+</html>
