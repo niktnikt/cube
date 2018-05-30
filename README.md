@@ -1,1 +1,1 @@
-Simple cube timer - my first project in node.js :)
+This app was made using node.js :)
